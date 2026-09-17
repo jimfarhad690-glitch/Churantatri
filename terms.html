@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lesen Sie die AGB von Churantatri für die Nutzung unserer Backplattform mit Cake Recipes, Pastry Rezepten und Community-Funktionen.">
+  <meta name="robots" content="index, follow">
+  <title>Allgemeine Geschäftsbedingungen – Churantatri</title>
+  <link rel="canonical" href="https://churantatri-site.com/terms.html">
+  <link rel="icon" type="image/svg+xml" href="{{favicon_file}}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .btn-primary { background-color: #EF4444; }
+    .btn-primary:hover { background-color: #DC2626; }
+    .text-primary { color: #EF4444; }
+    .bg-primary { background-color: #EF4444; }
+    {{template_custom_css}}
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 text-white p-4 shadow-lg" style="display:none;">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-gray-300">Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Sie können wählen, welche Cookies Sie akzeptieren möchten. <a href="privacy-policy.html" class="underline text-white">Cookie-Richtlinie</a>.</p>
+    <div class="flex gap-3 shrink-0">
+      <button onclick="acceptCookies('necessary')" class="px-4 py-2 text-sm border border-gray-500 rounded hover:bg-gray-700 transition">Nur notwendige</button>
+      <button onclick="acceptCookies('all')" class="px-4 py-2 text-sm rounded text-white transition btn-primary">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<header id="main-header" class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo with tech icon -->
+    <a href="/" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+      </div>
+      <span class="text-xl font-bold text-gray-900">Churantatri</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-600">
+      <a href="/#about" class="nav-link hover:text-gray-900 transition">Über uns</a>
+      <a href="/#services" class="nav-link hover:text-gray-900 transition">Angebote</a>
+      <a href="/#testimonials" class="nav-link hover:text-gray-900 transition">Bewertungen</a>
+      <a href="/#faq" class="nav-link hover:text-gray-900 transition">FAQ</a>
+      <a href="contact.html" class="nav-link hover:text-gray-900 transition">Kontakt</a>
+    </nav>
+    <a href="/#cta" class="hidden md:inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">
+      Jetzt Rezepte entdecken
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-gray-50" onclick="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 text-sm font-medium text-gray-600">
+    <a href="/#about" class="block py-2 hover:text-primary" onclick="toggleMenu()">Über uns</a>
+    <a href="/#services" class="block py-2 hover:text-primary" onclick="toggleMenu()">Angebote</a>
+    <a href="/#testimonials" class="block py-2 hover:text-primary" onclick="toggleMenu()">Bewertungen</a>
+    <a href="/#faq" class="block py-2 hover:text-primary" onclick="toggleMenu()">FAQ</a>
+    <a href="contact.html" class="block py-2 hover:text-primary" onclick="toggleMenu()">Kontakt</a>
+    <a href="/#cta" class="block mt-2 px-4 py-2 text-white rounded-lg text-center btn-primary font-semibold" onclick="toggleMenu()">Jetzt Rezepte entdecken</a>
+  </div>
+</header>
+
+<main class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Allgemeine Geschäftsbedingungen</h1>
+    <p class="text-sm text-gray-400 mb-10">Zuletzt aktualisiert: 1. Januar 2025</p>
+    <div class="space-y-8 text-gray-600 leading-relaxed">
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">1. 1. Geltungsbereich</h2><p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Nutzer der Churantatri-Plattform unter churantatri-site.com. Mit der Nutzung unserer Website und Dienste erklären Sie sich mit diesen Bedingungen einverstanden. Churantatri behält sich das Recht vor, diese Bedingungen jederzeit zu ändern.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">2. 2. Nutzungsbedingungen</h2><p>Die Nutzung unserer Plattform ist nur für Personen ab 16 Jahren gestattet. Sie verpflichten sich, unsere Inhalte nur für private, nicht kommerzielle Zwecke zu nutzen. Das Kopieren, Verbreiten oder kommerzielle Verwerten unserer Cake Recipes und Pastry Rezepte ist ohne ausdrückliche Genehmigung nicht erlaubt.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">3. 3. Registrierung und Konto</h2><p>Für bestimmte Funktionen ist eine Registrierung erforderlich. Sie sind verpflichtet, wahrheitsgemäße Angaben zu machen und Ihre Zugangsdaten sicher aufzubewahren. Churantatri behält sich das Recht vor, Konten bei Verstößen gegen diese AGB ohne Vorankündigung zu sperren oder zu löschen.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">4. 4. Urheberrecht und Inhalte</h2><p>Alle Inhalte auf Churantatri, einschließlich Rezepte, Texte, Bilder und Videos, sind urheberrechtlich geschützt. Die Nutzung dieser Inhalte für eigene kommerzielle Zwecke ist ohne schriftliche Genehmigung von Churantatri nicht erlaubt. Nutzer, die eigene Inhalte hochladen, gewähren Churantatri ein Nutzungsrecht.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">5. 5. Haftungsbeschränkung</h2><p>Churantatri übernimmt keine Garantie für die vollständige Richtigkeit aller Rezepte und Informationen. Wir haften nicht für Schäden, die durch die Nutzung unserer Inhalte entstehen, sofern diese nicht auf grober Fahrlässigkeit oder Vorsatz beruhen. Nutzen Sie alle Rezepte auf eigene Verantwortung.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">6. 6. Community-Regeln</h2><p>In unserer Community verpflichten Sie sich zu einem respektvollen Umgang miteinander. Beiträge, die beleidigend, diskriminierend oder rechtswidrig sind, werden entfernt. Churantatri behält sich das Recht vor, Nutzer, die gegen diese Regeln verstoßen, von der Plattform auszuschließen.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">7. 7. Datenschutz</h2><p>Die Verarbeitung Ihrer personenbezogenen Daten erfolgt gemäß unserer Datenschutzerklärung und der DSGVO. Mit der Nutzung unserer Plattform erklären Sie sich mit der Verarbeitung Ihrer Daten gemäß unserer Datenschutzerklärung einverstanden. Ihre Datenschutzrechte bleiben davon unberührt.</p></div>
+      <div><h2 class="text-xl font-bold text-gray-900 mb-3">8. 8. Anwendbares Recht</h2><p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesen AGB ist Berlin, sofern Sie Unternehmer sind. Für Verbraucher gelten die gesetzlichen Regelungen des deutschen und europäischen Verbraucherrechts.</p></div>
+      <div>
+        <h2 class="text-xl font-bold text-gray-900 mb-3">Kontakt bei rechtlichen Fragen</h2>
+        <p>Bei Fragen zu diesen AGB wenden Sie sich bitte an legal@churantatri-site.com oder schreiben Sie an Churantatri, Bäckerstraße 42, 10115 Berlin, Deutschland.</p>
+        <p class="mt-2">Churantatri<br>Bäckerstraße 42, 10115 Berlin, Deutschland<br>info@churantatri-site.com</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="main-footer" class="bg-white border-t border-gray-100 py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Churantatri</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed max-w-xs mb-5">Churantatri ist Ihre Plattform für köstliche Cake Recipes, Pastry Rezepte und Macarons im Bäckerei-Stil – backen Sie mit Leidenschaft.</p>
+        <div class="text-sm text-gray-500 space-y-1.5">
+          <div>Bäckerstraße 42, 10115 Berlin, Deutschland</div>
+          <div>+49 30 12345678</div>
+          <div>info@churantatri-site.com</div>
+        </div>
+      </div>
+      <div>
+        <div class="text-gray-900 font-semibold text-sm mb-4">Navigation</div>
+        <ul class="space-y-2.5 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary transition">Startseite</a></li>
+          <li><a href="about.html" class="hover:text-primary transition">Über uns</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-900 font-semibold text-sm mb-4">Rechtliches</div>
+        <ul class="space-y-2.5 text-sm text-gray-500">
+          <li><a href="privacy-policy.html" class="hover:text-primary transition">Datenschutz</a></li>
+          <li><a href="terms.html" class="hover:text-primary transition">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <span>© 2025 Churantatri. Alle Rechte vorbehalten.</span>
+      <span>Made with care by Churantatri</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function acceptCookies(type) { localStorage.setItem('cookies_accepted', type); document.getElementById('cookie-banner').style.display = 'none'; }
+  window.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookies_accepted')) document.getElementById('cookie-banner').style.display = 'block'; });
+  function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+</script>
+</body>
+</html>

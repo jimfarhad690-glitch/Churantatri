@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Erfahren Sie mehr über Churantatri, Ihre Plattform für Cake Recipes, Pastry Rezepte und Macarons im Bäckerei-Stil. Lernen Sie unser Team kennen.">
+  <meta name="robots" content="index, follow">
+  <title>Über Churantatri – Ihre Backplattform für Cake & Pastry Rezepte</title>
+  <link rel="canonical" href="https://churantatri-site.com/about.html">
+  <link rel="icon" type="image/svg+xml" href="{{favicon_file}}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .btn-primary { background-color: #EF4444; }
+    .btn-primary:hover { background-color: #DC2626; }
+    .text-primary { color: #EF4444; }
+    .bg-primary { background-color: #EF4444; }
+    {{template_custom_css}}
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 text-white p-4 shadow-lg" style="display:none;">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-gray-300">Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Sie können wählen, welche Cookies Sie akzeptieren möchten. <a href="privacy-policy.html" class="underline text-white">Cookie-Richtlinie</a>.</p>
+    <div class="flex gap-3 shrink-0">
+      <button onclick="acceptCookies('necessary')" class="px-4 py-2 text-sm border border-gray-500 rounded hover:bg-gray-700 transition">Nur notwendige</button>
+      <button onclick="acceptCookies('all')" class="px-4 py-2 text-sm rounded text-white transition btn-primary">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<header id="main-header" class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo with tech icon -->
+    <a href="/" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+      </div>
+      <span class="text-xl font-bold text-gray-900">Churantatri</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-600">
+      <a href="/#about" class="nav-link hover:text-gray-900 transition">Über uns</a>
+      <a href="/#services" class="nav-link hover:text-gray-900 transition">Angebote</a>
+      <a href="/#testimonials" class="nav-link hover:text-gray-900 transition">Bewertungen</a>
+      <a href="/#faq" class="nav-link hover:text-gray-900 transition">FAQ</a>
+      <a href="contact.html" class="nav-link hover:text-gray-900 transition">Kontakt</a>
+    </nav>
+    <a href="/#cta" class="hidden md:inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">
+      Jetzt Rezepte entdecken
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-gray-50" onclick="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 text-sm font-medium text-gray-600">
+    <a href="/#about" class="block py-2 hover:text-primary" onclick="toggleMenu()">Über uns</a>
+    <a href="/#services" class="block py-2 hover:text-primary" onclick="toggleMenu()">Angebote</a>
+    <a href="/#testimonials" class="block py-2 hover:text-primary" onclick="toggleMenu()">Bewertungen</a>
+    <a href="/#faq" class="block py-2 hover:text-primary" onclick="toggleMenu()">FAQ</a>
+    <a href="contact.html" class="block py-2 hover:text-primary" onclick="toggleMenu()">Kontakt</a>
+    <a href="/#cta" class="block mt-2 px-4 py-2 text-white rounded-lg text-center btn-primary font-semibold" onclick="toggleMenu()">Jetzt Rezepte entdecken</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <span class="text-sm font-semibold text-primary uppercase tracking-widest">Über Churantatri</span>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Über Churantatri</h1>
+    <p class="text-lg text-gray-500 max-w-2xl mx-auto">Wir machen professionelles Backen für jeden zugänglich – mit Leidenschaft, Expertise und einer lebendigen Community.</p>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row gap-12 items-center">
+      <div class="flex-1">
+        <span class="text-sm font-semibold text-primary uppercase tracking-widest">Unsere Geschichte</span>
+        <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6">Wie alles begann</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Churantatri wurde 2010 in Berlin gegründet, als eine Gruppe leidenschaftlicher Konditoren und Hobbybäcker beschloss, ihr Wissen zu teilen. Die Gründer erkannten, dass viele Menschen davon träumten, professionelle Backwaren herzustellen, aber keinen Zugang zu qualitativ hochwertigen Anleitungen hatten. So entstand die Idee einer Plattform, die Bäckerei-Wissen für alle zugänglich macht.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">In den ersten Jahren konzentrierte sich Churantatri auf einfache Cake Recipes und grundlegende Backtechniken. Mit wachsender Community kamen immer mehr Rezeptkategorien hinzu, darunter Pastry Recipes, Macaron Anleitungen und spezielle Bäckerei-Stil Dekorationen. Das Team wuchs stetig und umfasst heute erfahrene Konditoren, Ernährungsberater und Backenthusiasten aus ganz Deutschland.</p>
+        <p class="text-gray-600 leading-relaxed">Heute ist Churantatri eine der führenden Backplattformen in Deutschland mit über 5000 zufriedenen Mitgliedern. Wir sind stolz auf unsere Gemeinschaft und die Hunderte von Erfolgsgeschichten, die uns jeden Tag erreichen. Unser Ziel bleibt dasselbe: Jedem Menschen die Freude am Backen zu vermitteln und professionelle Ergebnisse im Home Bake zu ermöglichen.</p>
+      </div>
+      <div class="flex-1">
+        <img src="images/about.jpg" alt="Konditorin dekoriert eine Torte mit Crème im professionellen Stil" width="540" height="400" class="w-full rounded-2xl shadow-lg object-cover" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div><div class="text-4xl font-extrabold text-primary mb-2">10+</div><div class="text-sm text-gray-500">Jahre Backerfahrung</div></div>
+      <div><div class="text-4xl font-extrabold text-primary mb-2">5000+</div><div class="text-sm text-gray-500">Zufriedene Hobbybäcker</div></div>
+      <div><div class="text-4xl font-extrabold text-primary mb-2">98%</div><div class="text-sm text-gray-500">Erfolgsquote der Rezepte</div></div>
+      <div><div class="text-4xl font-extrabold text-primary mb-2">15+</div><div class="text-sm text-gray-500">Rezeptkategorien</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-14">
+      <span class="text-sm font-semibold text-primary uppercase tracking-widest">Unsere Werte</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Was uns antreibt</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl bg-gray-50 text-center">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 bg-primary">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">Leidenschaft fürs Backen</h3>
+        <p class="text-sm text-gray-500">Backen ist für uns mehr als ein Hobby – es ist eine Kunst. Wir teilen diese Leidenschaft mit jeder Rezeptanleitung.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-gray-50 text-center">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 bg-primary">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">Qualität und Präzision</h3>
+        <p class="text-sm text-gray-500">Jedes Cake Recipe und Pastry Recipe wird sorgfältig getestet, um Ihnen nur die besten und zuverlässigsten Anleitungen zu bieten.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-gray-50 text-center">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 bg-primary">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">Gemeinschaft und Inspiration</h3>
+        <p class="text-sm text-gray-500">Wir glauben an die Kraft der Community. Zusammen lernen wir schneller und inspirieren uns gegenseitig zu neuen Backkreationen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-14">
+      <span class="text-sm font-semibold text-primary uppercase tracking-widest">Unser Team</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Die Menschen hinter Churantatri</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
+        <img src="images/team1.jpg" alt="Andreas Schäfer" width="80" height="80" class="w-20 h-20 rounded-full object-cover mx-auto mb-4" loading="lazy">
+        <h3 class="font-bold text-gray-900">Andreas Schäfer</h3>
+        <div class="text-sm text-primary mt-1">CEO</div>
+        <p class="text-xs text-gray-500 mt-3">Andreas gründete Churantatri mit der Vision, professionelles Backen für alle zugänglich zu machen. Mit 15 Jahren Erfahrung in der Backbranche führt er das Team mit Leidenschaft.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
+        <img src="images/team2.jpg" alt="Markus Lehmann" width="80" height="80" class="w-20 h-20 rounded-full object-cover mx-auto mb-4" loading="lazy">
+        <h3 class="font-bold text-gray-900">Markus Lehmann</h3>
+        <div class="text-sm text-primary mt-1">CTO</div>
+        <p class="text-xs text-gray-500 mt-3">Markus ist verantwortlich für die technische Infrastruktur der Plattform. Er sorgt dafür, dass alle Rezepte und Inhalte nahtlos und benutzerfreundlich zugänglich sind.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center shadow-sm">
+        <img src="images/team3.jpg" alt="Julia Braun" width="80" height="80" class="w-20 h-20 rounded-full object-cover mx-auto mb-4" loading="lazy">
+        <h3 class="font-bold text-gray-900">Julia Braun</h3>
+        <div class="text-sm text-primary mt-1">CMO</div>
+        <p class="text-xs text-gray-500 mt-3">Julia leitet das Marketing und die Community-Strategie von Churantatri. Mit ihrer Kreativität bringt sie neue Backenthusiasten auf die Plattform und hält die Community lebendig.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="main-footer" class="bg-white border-t border-gray-100 py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Churantatri</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed max-w-xs mb-5">Churantatri ist Ihre Plattform für köstliche Cake Recipes, Pastry Rezepte und Macarons im Bäckerei-Stil – backen Sie mit Leidenschaft.</p>
+        <div class="text-sm text-gray-500 space-y-1.5">
+          <div>Bäckerstraße 42, 10115 Berlin, Deutschland</div>
+          <div>+49 30 12345678</div>
+          <div>info@churantatri-site.com</div>
+        </div>
+      </div>
+      <div>
+        <div class="text-gray-900 font-semibold text-sm mb-4">Navigation</div>
+        <ul class="space-y-2.5 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary transition">Startseite</a></li>
+          <li><a href="about.html" class="hover:text-primary transition">Über uns</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-900 font-semibold text-sm mb-4">Rechtliches</div>
+        <ul class="space-y-2.5 text-sm text-gray-500">
+          <li><a href="privacy-policy.html" class="hover:text-primary transition">Datenschutz</a></li>
+          <li><a href="terms.html" class="hover:text-primary transition">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <span>© 2025 Churantatri. Alle Rechte vorbehalten.</span>
+      <span>Made with care by Churantatri</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function acceptCookies(type) { localStorage.setItem('cookies_accepted', type); document.getElementById('cookie-banner').style.display = 'none'; }
+  window.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookies_accepted')) document.getElementById('cookie-banner').style.display = 'block'; });
+  function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+</script>
+</body>
+</html>

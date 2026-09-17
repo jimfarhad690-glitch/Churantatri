@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktieren Sie das Churantatri-Team bei Fragen zu Cake Recipes, Pastry Rezepten oder Macarons. Wir helfen Ihnen gerne weiter.">
+  <meta name="robots" content="index, follow">
+  <title>Kontakt – Churantatri | Fragen zu Cake Recipes & Pastry Rezepten</title>
+  <link rel="canonical" href="https://churantatri-site.com/contact.html">
+  <link rel="icon" type="image/svg+xml" href="{{favicon_file}}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .btn-primary { background-color: #EF4444; }
+    .btn-primary:hover { background-color: #DC2626; }
+    .text-primary { color: #EF4444; }
+    .bg-primary { background-color: #EF4444; }
+    {{template_custom_css}}
+  </style>
+</head>
+<body class="font-sans text-gray-800 antialiased">
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-gray-900 text-white p-4 shadow-lg" style="display:none;">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-gray-300">Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Sie können wählen, welche Cookies Sie akzeptieren möchten. <a href="privacy-policy.html" class="underline text-white">Cookie-Richtlinie</a>.</p>
+    <div class="flex gap-3 shrink-0">
+      <button onclick="acceptCookies('necessary')" class="px-4 py-2 text-sm border border-gray-500 rounded hover:bg-gray-700 transition">Nur notwendige</button>
+      <button onclick="acceptCookies('all')" class="px-4 py-2 text-sm rounded text-white transition btn-primary">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<header id="main-header" class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo with tech icon -->
+    <a href="/" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+      </div>
+      <span class="text-xl font-bold text-gray-900">Churantatri</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-600">
+      <a href="/#about" class="nav-link hover:text-gray-900 transition">Über uns</a>
+      <a href="/#services" class="nav-link hover:text-gray-900 transition">Angebote</a>
+      <a href="/#testimonials" class="nav-link hover:text-gray-900 transition">Bewertungen</a>
+      <a href="/#faq" class="nav-link hover:text-gray-900 transition">FAQ</a>
+      <a href="contact.html" class="nav-link hover:text-gray-900 transition">Kontakt</a>
+    </nav>
+    <a href="/#cta" class="hidden md:inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">
+      Jetzt Rezepte entdecken
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-gray-50" onclick="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 text-sm font-medium text-gray-600">
+    <a href="/#about" class="block py-2 hover:text-primary" onclick="toggleMenu()">Über uns</a>
+    <a href="/#services" class="block py-2 hover:text-primary" onclick="toggleMenu()">Angebote</a>
+    <a href="/#testimonials" class="block py-2 hover:text-primary" onclick="toggleMenu()">Bewertungen</a>
+    <a href="/#faq" class="block py-2 hover:text-primary" onclick="toggleMenu()">FAQ</a>
+    <a href="contact.html" class="block py-2 hover:text-primary" onclick="toggleMenu()">Kontakt</a>
+    <a href="/#cta" class="block mt-2 px-4 py-2 text-white rounded-lg text-center btn-primary font-semibold" onclick="toggleMenu()">Jetzt Rezepte entdecken</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="bg-gradient-to-br from-gray-50 to-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <span class="text-sm font-semibold text-primary uppercase tracking-widest">Kontaktieren Sie uns</span>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2 mb-4">Wir sind für Sie da</h1>
+    <p class="text-lg text-gray-500 max-w-2xl mx-auto">Haben Sie Fragen zu unseren Rezepten oder Angeboten? Schreiben Sie uns – unser Team antwortet schnell und kompetent.</p>
+  </div>
+</section>
+
+<!-- Contact Info + Form -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Kontaktinformationen</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-primary">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 mb-1">Adresse</div>
+              <div class="text-gray-500 text-sm">Bäckerstraße 42, 10115 Berlin, Deutschland</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-primary">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 mb-1">Telefon</div>
+              <div class="text-gray-500 text-sm">+49 30 12345678</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-primary">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 mb-1">E-Mail</div>
+              <div class="text-gray-500 text-sm">info@churantatri-site.com</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-primary">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 mb-1">Öffnungszeiten</div>
+              <div class="text-gray-500 text-sm">Mo-Fr 9:00-18:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Schreiben Sie uns</h2>
+        <form onsubmit="return false;" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Vollständiger Name</label>
+            <input type="text" placeholder="Ihr vollständiger Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none text-sm" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">E-Mail-Adresse</label>
+            <input type="email" placeholder="ihre.email@beispiel.de" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none text-sm" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Betreff</label>
+            <input type="text" placeholder="Womit können wir Ihnen helfen?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none text-sm">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Nachricht</label>
+            <textarea rows="4" placeholder="Schreiben Sie uns Ihre Frage oder Ihr Anliegen..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none text-sm resize-none" required></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 text-white font-semibold rounded-xl transition btn-primary">Nachricht senden</button>
+          <p class="text-xs text-gray-400 text-center">Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu. <a href="privacy-policy.html" class="underline hover:text-gray-600">Datenschutz</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="main-footer" class="bg-white border-t border-gray-100 py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center bg-primary">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg>
+          </div>
+          <span class="text-xl font-bold text-gray-900">Churantatri</span>
+        </div>
+        <p class="text-sm text-gray-500 leading-relaxed max-w-xs mb-5">Churantatri ist Ihre Plattform für köstliche Cake Recipes, Pastry Rezepte und Macarons im Bäckerei-Stil – backen Sie mit Leidenschaft.</p>
+        <div class="text-sm text-gray-500 space-y-1.5">
+          <div>Bäckerstraße 42, 10115 Berlin, Deutschland</div>
+          <div>+49 30 12345678</div>
+          <div>info@churantatri-site.com</div>
+        </div>
+      </div>
+      <div>
+        <div class="text-gray-900 font-semibold text-sm mb-4">Navigation</div>
+        <ul class="space-y-2.5 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary transition">Startseite</a></li>
+          <li><a href="about.html" class="hover:text-primary transition">Über uns</a></li>
+          <li><a href="contact.html" class="hover:text-primary transition">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-900 font-semibold text-sm mb-4">Rechtliches</div>
+        <ul class="space-y-2.5 text-sm text-gray-500">
+          <li><a href="privacy-policy.html" class="hover:text-primary transition">Datenschutz</a></li>
+          <li><a href="terms.html" class="hover:text-primary transition">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-400">
+      <span>© 2025 Churantatri. Alle Rechte vorbehalten.</span>
+      <span>Made with care by Churantatri</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function acceptCookies(type) { localStorage.setItem('cookies_accepted', type); document.getElementById('cookie-banner').style.display = 'none'; }
+  window.addEventListener('DOMContentLoaded', function() { if (!localStorage.getItem('cookies_accepted')) document.getElementById('cookie-banner').style.display = 'block'; });
+  function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+</script>
+</body>
+</html>
